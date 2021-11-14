@@ -1,6 +1,7 @@
 /*
  * SPI init/core code
  *
+ *
  * Copyright (C) 2005 David Brownell
  * Copyright (C) 2008 Secret Lab Technologies Ltd.
  *
