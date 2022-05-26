@@ -1317,7 +1317,7 @@ static struct vm_struct *__get_vm_area_node(unsigned long size,
 	struct vmap_area *va;
 	struct vm_struct *area;
 
-	BUG_ON(in_interrupt());
+	BUG_ON(in_interrupt()); //可能会引起休眠
 	if (flags & VM_IOREMAP)
 		align = 1ul << clamp(fls(size), PAGE_SHIFT, IOREMAP_MAX_ORDER);
 
